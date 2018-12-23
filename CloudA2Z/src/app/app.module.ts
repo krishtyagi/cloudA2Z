@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CloudproviderComponent } from './cloudprovider/cloudprovider.component';
 import { ProviderDetailsComponent } from './provider-details/provider-details.component';
 import { MessageComponent } from './message/message.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CloudproviderComponent,
     ProviderDetailsComponent,
-    MessageComponent
+    MessageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

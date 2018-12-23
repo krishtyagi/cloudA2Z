@@ -4,7 +4,10 @@
 <h2>Top Cloud Providers</h2>
 <ul class="providers">
   <li *ngFor="let p of cloudProviders"  [class.selected]="p === selectedProvider" (click)="onSelect(p)">
+  
+   <a routerLink="/detail/{{p.id}}">
     <span class="badge">{{p.id}}</span> {{p.provider}}
+    </a>
   </li>
 </ul>
 

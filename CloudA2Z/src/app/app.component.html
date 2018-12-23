@@ -2,7 +2,12 @@
 
 
 <h1>{{title}}</h1>
-<app-cloudprovider></app-cloudprovider>
+
+<nav>
+     <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/cloudProvider">Top CloudProviders</a>
+</nav>
+<router-outlet></router-outlet>
 <app-message></app-message>
 <!-->
 <div style="text-align:center">

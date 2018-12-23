@@ -8,6 +8,12 @@ import { MessagesService } from './messages.service';
 })
 export class CloudProviderService {
 
+
+    getCloudProvider(id: number): Observable<CloudProvider> {
+  // TODO: send the message _after_ fetching the hero
+  this.messagesService.add(`CloudService: fetched cloud sponsore id=${id}`);
+  return of(CLOUDPROVIDERS.find(cloudProvider => cloudProvider.id === id));
+}
     getCloudProviders(): CloudProvider[] {
         return CLOUDPROVIDERS;
     }
