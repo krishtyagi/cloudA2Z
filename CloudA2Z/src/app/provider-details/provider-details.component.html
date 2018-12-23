@@ -1,0 +1,19 @@
+<div *ngIf="cloudProvider">
+<h2>{{cloudProvider.provider | uppercase}} Details</h2>
+<div><span>id: </span>{{cloudProvider.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="cloudProvider.provider" placeholder="name">
+  </label>
+<div>
+  <label>Market Rank:
+    {{cloudProvider.marketRank}}
+  </label>
+  </div>
+  <div>
+  <label>Market Share:
+    {{cloudProvider.marketShare}}
+  </label>
+  </div>
+</div>
+</div>
