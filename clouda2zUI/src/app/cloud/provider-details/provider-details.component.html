@@ -1,0 +1,11 @@
+<div *ngIf="cloudProvider">
+<h2>{{cloudProvider.provider | uppercase}} Details</h2>
+
+<div><span>Name: </span>{{cloudProvider.shortName}}</div>
+<div><span>Description: </span>{{cloudProvider.provider}}</div>
+<div><span>Market Rank: </span>{{cloudProvider.marketRank}}</div>
+<div><span>Market Share: </span>{{cloudProvider.marketShare}}</div>
+<div><span>Services: </span> TODO </div>
+
+<button (click)="goBack()">go back</button>
+</div>

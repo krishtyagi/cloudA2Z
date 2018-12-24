@@ -1,0 +1,25 @@
+
+
+
+
+
+
+<div class="row">
+  <div class="column side">
+   <h2>World Top Cloud Providers</h2>
+<ul class="providers">
+  <li *ngFor="let p of cloudProviders"  [class.selected]="p === selectedProvider" (click)="onSelect(p)">
+  
+   <div routerLink="/detail/{{p.id}}">
+    <span class="badge">{{p.id}}</span> {{p.provider}}
+   </div>
+  </li>
+</ul>
+  </div>
+  
+  <div class="column middle">
+   <app-provider-details [cloudProvider]="selectedProvider"></app-provider-details>
+</div>
+  
+  
+</div>
